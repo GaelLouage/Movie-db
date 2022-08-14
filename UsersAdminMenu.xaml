@@ -1,0 +1,47 @@
+﻿<Window x:Class="MovieDatabase.UsersAdminMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MovieDatabase"
+        mc:Ignorable="d"
+        Title="UsersAdminMenu" Height="450" Width="800" Background="#FF232323">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+           
+        </Grid.RowDefinitions>
+        <GroupBox Header="Edit user roles" Foreground="White">
+            <StackPanel>
+
+               <ComboBox x:Name="cmbUsersRoleEdit">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Username:" FontWeight="Bold" Margin="10 10 10 10"/>
+                                    <TextBlock Text="{Binding firstName}" Foreground="Black" Margin="10 10 10 10"/>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Role:" FontWeight="Bold" Margin="10 10 10 10"/>
+                                    <TextBlock Text="{Binding userRole}" Margin="10 10 10 10"/>
+                                </StackPanel>
+                                <Separator/>
+                            </StackPanel>
+                          
+                        </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+                <RadioButton x:Name="rdbAdmin" Content="Admin" Foreground="White" FontSize="16" Margin="5 5 5 5" Checked="RdbAdmin_Checked"/>
+                <RadioButton x:Name="rdbUser" Content="User" Foreground="White" FontSize="16" Margin="5 5 5 5" Checked="RdbUser_Checked"/>
+            </StackPanel>
+        </GroupBox>
+      
+    </Grid>
+</Window>
