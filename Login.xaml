@@ -19,8 +19,8 @@
         </Grid.RowDefinitions>
         <Label Content="UserName" Grid.Row="0" Grid.Column="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Content="Password" Grid.Row="1" Grid.Column="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox x:Name="txtUserName" Grid.Column="1" Grid.Row="0" Margin="5 5 5 5" VerticalAlignment="Center"/>
-        <PasswordBox x:Name="txtPassword" Grid.Row="1" Grid.Column="1" Margin="5 5 5 5" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtUserName" Grid.Column="1" Grid.Row="0" Margin="5 5 5 5" Height="250" VerticalAlignment="Center"/>
+        <PasswordBox x:Name="txtPassword" Grid.Row="1" Grid.Column="1" Margin="5 5 5 5"  Height="250" VerticalAlignment="Center"/>
         <Button x:Name="btnLogin" Content="Login" Grid.Column="0" Grid.Row="2" Margin="5 5 5 5" Click="btnLogin_Click" Background="red" Foreground="white"/>
         <Button x:Name="btnCancel" Content="Cancel" Grid.Column="1" Grid.Row="2" Margin="5 5 5 5" Click="btnCancel_Click" Background="red" Foreground="white"/>
         <Label  x:Name="txtRegister" Foreground="LightBlue" Grid.Row="4">
